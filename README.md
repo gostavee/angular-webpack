@@ -5,9 +5,12 @@ This is a super simple angular 1.x component based example using angular, webpac
 ### Prerequisites
 
 - Node version 4.0.0 or higher
+  <br>
   install here : <a href="https://nodejs.org/en/">https://nodejs.org/en</a>
 - NPM
-  it gets installed with not
+  <br>
+  it gets installed with node
+  <br>
   OR
   install here : <a href="https://www.npmjs.com/">https://www.npmjs.com</a>
 
