@@ -1,0 +1,44 @@
+{
+  "name": "angular-webpack",
+  "version": "",
+  "description": "Component based Angular-1.x example with webpack.",
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "repository": "",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently lite-server webpack --watch"
+  },
+  "presets": "es2015",
+  "author": {
+    "name": "Ahmed Sobhy",
+    "email": "gostavee@gmail.com"
+  },
+  "keywords": [
+    "es6",
+    "components",
+    "angular",
+    "webpack",
+    "ui-router"
+  ],
+  "devDependencies": {
+    "babel-core": "^5.8.24",
+    "babel-loader": "^5.4.2",
+    "concurrently": "^3.5.0",
+    "css-loader": "^0.17.0",
+    "html-loader": "^0.5.1",
+    "html-webpack-plugin": "^2.9.0",
+    "img-loader": "^2.0.0",
+    "lite-server": "^2.3.0",
+    "style-loader": "^0.18.2",
+    "url-loader": "^0.5.9",
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "^1.10.1"
+  },
+  "dependencies": {
+    "angular": "~1.5.9",
+    "angular-ui-router": "^0.4.2"
+  }
+}

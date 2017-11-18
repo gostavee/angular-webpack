@@ -1,0 +1,25 @@
+<h1 class="album-title">{{$ctrl.currentAlbum.title}}</h1>
+<a class="trans btn" href="" ng-click="$ctrl.openModal()">Add Movie</a>
+<hr />
+<h3 class="album-title">{{$ctrl.currentAlbum.desc}}</h3>
+<hr />
+<div class="content-box-outer" ng-repeat="movie in $ctrl.currentAlbum.videos">
+  <div class="content-box-inner">
+    <h1>{{movie.title}}</h1>
+    <iframe class="video" ng-src="{{$ctrl.getEmbedUrl(movie.url)}}"></iframe>
+  </div>
+</div>
+<!-- Add movie popup -->
+<div class="add-move" ng-if="$ctrl.showPopup">
+  <div class="add-movie-form">
+    <h3>Add movie information</h3>
+    <input type="text" placeholder="Title"  ng-model="$ctrl.newMovie.title" />
+    <input type="text" placeholder="Description"  ng-model="$ctrl.newMovie.desc" />
+    <input type="text" placeholder="URL"  ng-model="$ctrl.newMovie.url" />
+    <a class="trans btn" href="" ng-click="$ctrl.addMovie($ctrl.currentAlbum)">Add</a>
+    <a class="trans btn" href="" ng-click="$ctrl.hidePopup()">Cancel</a>
+    <p style="color:red" ng-if="$ctrl.showError">
+      Please fill all info
+    </p>
+  </div>
+</div>

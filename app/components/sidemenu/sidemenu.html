@@ -1,0 +1,15 @@
+<div class="side-menu">
+  <img class="logo" src="{{$ctrl.imgs.logo}}" alt="logo player" />
+  <ul class="main-nav-side">
+    <li>
+      <a class="trans" href="#" ui-sref='main'>
+        Home
+      </a>
+    </li>
+    <li ng-repeat="album in $ctrl.albums">
+      <a class="trans" ng-class="{active: $stateParams.id == album.id}" href="#" ui-sref='album({id:{{album.id}}})'>
+          {{album.title}}
+      </a>
+    </li>
+  </ul>
+</div>
