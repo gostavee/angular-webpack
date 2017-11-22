@@ -67,7 +67,7 @@ class Album {
   * Add the new Movie
   */
   addMovie(album) {
-    if(this.newMovie.title == "" || this.newMovie.desc == "" || this.newMovie.url == "" || this.newMovie == {}) {
+    if(this.newMovie.title == "" || this.newMovie.desc == "" || this.newMovie.url == "") {
       this.showError = true;
     } else {
       album.videos.push(this.newMovie);
