@@ -16,7 +16,7 @@ This is a super simple angular 1.x component based example using angular, webpac
 
 ### Installing
 
-after installing node and npm, open the command line, navigate to the project directory
+after installing node and npm, download the repo, open the command line, navigate to the project directory
 
 for example in windows
 ```
